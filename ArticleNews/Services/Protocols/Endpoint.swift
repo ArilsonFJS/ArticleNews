@@ -14,7 +14,7 @@ protocol Endpoint {
 
 extension Endpoint {
     var baseUrl: String {
-        return ""
+        return "https://newsapi.org/v2/"
     }
     
     var fullUrl: String {
