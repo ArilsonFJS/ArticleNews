@@ -8,5 +8,5 @@
 import Foundation
 
 protocol NewsServiceProtocoling {
-    func fetchTopHeadlines(category: String, completion: @escaping(Result<[NewsResponse], APIError>)-> Void)
+    func fetchTopHeadlines(category: String, completion: @escaping(Result<NewsResponse, APIError>)-> Void)
 }
