@@ -7,8 +7,8 @@
 import Foundation
 final class EverythingService: NewsServiceProtocoling {
     
-    let requestManager: RequestManager
-    init(requestManager: RequestManager) {
+    let requestManager: RequestManaging
+    init(requestManager: RequestManaging) {
         self.requestManager = requestManager
     }
     

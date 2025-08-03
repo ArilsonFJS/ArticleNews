@@ -5,7 +5,7 @@
 //  Created by Arilson Silva on 01/08/25.
 //
 import Foundation
-struct RequestManager {
+struct RequestManager: RequestManaging {
     
     let session: URLSession
     init(session: URLSession = URLSession.shared) {
