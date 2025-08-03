@@ -5,7 +5,7 @@
 //  Created by Arilson Silva on 01/08/25.
 //
 import Foundation
-final class NewsService: NewsServiceProtocoling {
+final class EverythingService: NewsServiceProtocoling {
     
     let requestManager: RequestManager
     init(requestManager: RequestManager) {

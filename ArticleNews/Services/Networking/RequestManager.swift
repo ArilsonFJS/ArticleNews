@@ -41,8 +41,8 @@ struct RequestManager {
             
             do {
                 let decoder = JSONDecoder()
-                let decoded = try decoder.decode(NewsResponse.self, from: jsonData)
-                completion(.success(decoded as! T))
+                let decoded = try decoder.decode(T.self, from: jsonData)
+                completion(.success(decoded))
             } catch let error {
                 completion(.failure(.decodingFailed(error)))
             }
