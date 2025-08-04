@@ -12,7 +12,7 @@ final class EverythingService: NewsServiceProtocoling {
         self.requestManager = requestManager
     }
     
-    func fetchEverything(category: String, completion: @escaping (Result<NewsResponse, APIError>) -> Void) {
+    func fetchEverything(category: String, completion: @escaping (Result<[Article], APIError>) -> Void) {
         let articleEndpoint = ArticleNewsEndpoint.fetch
         requestManager.request(endpoint: articleEndpoint) { result in
             DispatchQueue.main.async {

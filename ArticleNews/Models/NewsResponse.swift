@@ -7,5 +7,5 @@
 
 import Foundation
 struct NewsResponse: Decodable {
-    
+    let articles: [Article]
 }

@@ -12,7 +12,7 @@ enum ArticleNewsEndpoint: Endpoint {
     
     var path: String {
         switch self {
-        case .fetch: "everything"
+        case .fetch: "everything?q="
         }
     }
 }
